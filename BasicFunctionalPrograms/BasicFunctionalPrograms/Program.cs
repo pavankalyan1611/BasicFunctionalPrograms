@@ -2,6 +2,6 @@
 using BasicFunctionalPrograms;
 
 
-Harmonics har = new Harmonics();
-har.harmonics();   
+Factors factor = new Factors();
+factor.factors();
        
