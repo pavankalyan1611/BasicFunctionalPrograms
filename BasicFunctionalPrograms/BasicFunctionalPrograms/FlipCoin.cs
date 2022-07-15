@@ -6,45 +6,39 @@ using System.Threading.Tasks;
 
 namespace BasicFunctionalPrograms
 {
-    public class FlipCoin
+    public class LeapYear
     {
-        public FlipCoin()
+        public LeapYear()
         {
-            Console.WriteLine("Welcome to Flip Coin Peoblem :");
+            Console.WriteLine("Welcome to Leap Year Peoblem :");
         }
-        public void FlipPercentage()
+        public void CheckLeapYear()
         {
-            int Head = 0;
-            int Tail = 0;
-            Console.WriteLine("Enter the number of times you want to flip the coin : ");
-            int NumofFlips = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(" Enter the Year : ");
+            int Year = Convert.ToInt32(Console.ReadLine());
 
-            while (NumofFlips <= 0)
+            while (Year < 1000 || Year > 9999)
             {
-                Console.WriteLine("You Are Entered Lessthen 0, please Enter Greterthen 0");
-                Console.WriteLine("Please Enter again :");
-                NumofFlips = Convert.ToInt32(Console.ReadLine());
-
+                Console.WriteLine("Please Enter a Four digit Year : ");
+                Year = Convert.ToInt32(Console.ReadLine());
             }
-            for (int i = 0; i < NumofFlips; i++)
+
+            if (Year % 400 == 0)
             {
-                Random flip = new Random();
-                int Head_Tail = flip.Next(0, 2);
-
-                if (Head_Tail < 0.5)
-                {
-                    Head++;
-                }
-                else
-                {
-                    Tail++;
-                }
+                Console.WriteLine(Year + "  Is a Leap Year ");
             }
-            float HeadPer = (float)Head * 100 / NumofFlips;
-            float TailPer = (float)Tail * 100 / NumofFlips;
-
-            Console.WriteLine("Heads :"+Head +" -> "+ HeadPer + " % of the times the result was heads. ");
-            Console.WriteLine("Tails :"+Tail +" -> "+ TailPer + "% of the times the result was tails");
+            else if (Year % 100 == 0)
+            {
+                Console.WriteLine(Year + "  Is Not a Leap Year ");
+            }
+            else if (Year % 4 == 0)
+            {
+                Console.WriteLine(Year + "  Is a Leap Year ");
+            }
+            else
+            {
+                Console.WriteLine(Year + "  Is Not a Leap Year ");
+            }
         }
     }
 }

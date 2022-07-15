@@ -1,8 +1,8 @@
-﻿using BasicFunctionalPrograms;
+﻿
+using BasicFunctionalPrograms;
 
 
-
- FlipCoin flipcoin = new FlipCoin();
-flipcoin.FlipPercentage();
+LeapYear leapyear = new LeapYear();
+leapyear.CheckLeapYear();
     
        
