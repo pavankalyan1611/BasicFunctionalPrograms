@@ -1,5 +1,5 @@
 ﻿
 using BasicFunctionalPrograms;
 
-EvenOdd evenOdd= new EvenOdd();
-evenOdd.evenodd();
+VowelConsonent check= new VowelConsonent();
+check.CheckVowelConsonent();
