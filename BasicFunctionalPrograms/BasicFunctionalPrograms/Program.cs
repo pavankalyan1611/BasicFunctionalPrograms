@@ -2,6 +2,6 @@
 using BasicFunctionalPrograms;
 
 
-PowerOfTwo poweroftwo = new PowerOfTwo();
-poweroftwo.powerof2();    
+Harmonics har = new Harmonics();
+har.harmonics();   
        
