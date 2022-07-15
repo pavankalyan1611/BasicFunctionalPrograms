@@ -2,7 +2,6 @@
 using BasicFunctionalPrograms;
 
 
-LeapYear leapyear = new LeapYear();
-leapyear.CheckLeapYear();
-    
+PowerOfTwo poweroftwo = new PowerOfTwo();
+poweroftwo.powerof2();    
        
