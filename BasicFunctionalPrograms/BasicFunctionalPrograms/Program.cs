@@ -1,6 +1,6 @@
 ﻿
 using BasicFunctionalPrograms;
 
-QuotientRemainder QR = new QuotientRemainder();
-QR.CalQuotientRemainder();
+SwapNumbers swapnum= new SwapNumbers();
+swapnum.swap();
        
