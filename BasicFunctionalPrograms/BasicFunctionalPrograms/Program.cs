@@ -1,7 +1,6 @@
 ﻿
 using BasicFunctionalPrograms;
 
-
-Factors factor = new Factors();
-factor.factors();
+QuotientRemainder QR = new QuotientRemainder();
+QR.CalQuotientRemainder();
        
