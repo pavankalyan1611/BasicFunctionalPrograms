@@ -1,6 +1,5 @@
 ﻿
 using BasicFunctionalPrograms;
 
-SwapNumbers swapnum= new SwapNumbers();
-swapnum.swap();
-       
+EvenOdd evenOdd= new EvenOdd();
+evenOdd.evenodd();
